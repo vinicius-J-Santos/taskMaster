@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Master</title>
 </head>
+<link rel="stylesheet" href="css/style.css">
 <body>
     <header>
         <a href="?pag=criar">Criar tabela</a>
