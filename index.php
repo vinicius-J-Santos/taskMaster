@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="css/style.css">
 <body>
     <header>
-        <a href="?pag=criar">Criar tabela</a>
-        <a href="?pag=dash">Dashboard</a>
+        <a href="?pag=criar" class="<?= ($_GET["pag"] ?? "dash") == "criar" ? "ativo" : ""; ?>">Criar tabela</a>
+        <a href="?pag=dash" class="<?= ($_GET["pag"] ?? "dash") == "dash" ? "ativo" : ""; ?>">Dashboard</a>
     </header>
     <main>
         <?php
