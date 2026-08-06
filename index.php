@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Master</title>
+</head>
+<body>
+    <header>
+        <a href="?pag=criar">Criar tabela</a>
+        <a href="?pag=dash">Dashboard</a>
+    </header>
+    <main>
+        <?php
+        $pag =isset($_GET["pag"])? $_GET["pag"]: "dash";
+
+        switch($pag) {
+            case "criar":
+                include "paginas/criar.html";
+            break;
+            case "dash":
+                include "paginas/dash.php";
+            break;
+            default:
+                include "paginas/dash.php";
+            break;
+        }
+        ?>
+    </main>
+</body>
+</html>
