@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    gay
+deletar o 
+<?php 
+$id = $_GET["id"];
+echo "$id"; ?>
 </body>
 </html>

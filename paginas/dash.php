@@ -1,6 +1,4 @@
 <?php
-require_once "../bd.php";
-
 $sql = "select * from tarefas";
 
 $resultado = $conn->query($sql);
@@ -23,7 +21,7 @@ while($tarefas=$resultado->fetch_assoc()):
     <div class="opcoes">
         <a href="">check</a>
         <a href="">edite</a>
-        <a href="../paginas/delete.php?id=<?= $tarefas["id"]; ?>">delete</a>
+        <a href="index.php?pag=delete&id=<?= $tarefas["id"]; ?>">delete</a>
     </div>
 </div>
 <?php

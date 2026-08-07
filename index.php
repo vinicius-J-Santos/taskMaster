@@ -1,3 +1,8 @@
+<?php
+
+require_once "bd.php";
+
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
