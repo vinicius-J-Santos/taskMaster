@@ -65,7 +65,7 @@ main .container input, main .container textarea {
 }
 main .container textarea {
     min-height: 65px;
-    min-width: 400px;
+    min-width: 410px;
     max-height: 170px;
     max-width: 800px;
 }
@@ -81,8 +81,33 @@ main .card {
     border-radius: 10px;
     padding: 20px;
     width: 400px;
-    height: 300px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+main .card .titulo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+main .card .titulo h3 {
+    color: rgb(170, 170, 170);
+}
+main .card .desc {
+    background-color: #002d3f;
+    padding: 10px;
+    border-radius: 10px;
+}
+main .card .opcoes {
+    display: flex;
+    justify-content: space-around;
+}
+main .card .opcoes a {
+    background-color: goldenrod;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+    width: 100px;
+    align-items: center;
 }

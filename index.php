@@ -14,18 +14,7 @@
     <main>
         <?php
         $pag =isset($_GET["pag"])? $_GET["pag"]: "dash";
-
-        switch($pag) {
-            case "criar":
-                include "paginas/criar.html";
-            break;
-            case "dash":
-                include "paginas/dash.php";
-            break;
-            default:
-                include "paginas/dash.php";
-            break;
-        }
+        include "paginas/$pag.php";
         ?>
     </main>
 </body>
