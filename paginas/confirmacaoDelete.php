@@ -17,7 +17,7 @@
     <div>
         <h1>
             Você deseja mesmo deletar a tarefa
-            "<?= htmlspecialchars($tarefa["titulo"]); ?>"
+            "<?= htmlspecialchars($tarefa["titulo"]); ?>"?
         </h1>
     </div>
     <div>
