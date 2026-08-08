@@ -15,11 +15,13 @@ while($tarefas=$resultado->fetch_assoc()):
         <h2><?= htmlspecialchars($tarefas["descricao"]); ?></h2>
     </div>
     <div>
-        <h1>Estimativa em horas: <?= date("h:i", strtotime($tarefas["horas_estimada"]));?></h1>
+        <h1>Estimativa em horas: <?= htmlspecialchars($tarefas["horas_estimada"]);?></h1>
         <h1>Prazo limite: <?= date("d/m/Y", strtotime($tarefas["data_limite"])); ?></h1>
     </div>
     <div class="opcoes">
-        <a href="">check</a>
+        <form action="check.php">
+            <input type="submit" value="check">
+        </form>
         <a href="index.php?pag=confirmacaoEditar&id=<?= $tarefas["id"]; ?>">edite</a>
         <a href="index.php?pag=confirmacaoDelete&id=<?= $tarefas["id"]; ?>">delete</a>
     </div>

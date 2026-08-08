@@ -55,7 +55,7 @@ main .container form {
 main .container label {
     font-size: 30px;
 }
-main .container input, main .container textarea {
+main .container input, main .container textarea, main .container a{
     padding: 5px;
     margin: 10px;
     border: 0;
@@ -75,6 +75,16 @@ main .container input:focus, main .container textarea:focus {
 main .container .botao {
     background-color: goldenrod;
     width: 45%;
+}
+main .container .botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .container .botao{
+    text-align: center;
+    color: black;
+    text-decoration: none;
 }
 
 main .card {
@@ -113,6 +123,7 @@ main .card .opcoes a {
     align-items: center;
 }
 
+
 main .popup {
     background-color: #005272;
     padding: 20px;
@@ -125,7 +136,7 @@ main .popup div {
     display: flex;
     justify-content: space-around;
 }
-main .popup div button{
+main .popup div button, main .popup div a {
     background-color: goldenrod;
     border-radius: 5px;
     border: 0;
@@ -135,8 +146,4 @@ main .popup div button{
     padding: 5px;
     width: 100px;
     cursor: pointer;
-}
-main .popup div button a {
-    text-decoration: none;
-    color: black;
 }

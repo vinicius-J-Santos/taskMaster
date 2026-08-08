@@ -12,7 +12,7 @@
         </div>
         <div>
             <label for="estimado">Horas estimadas: </label>
-            <input type="time" name="horas_estimada" id="estimado" required placeholder="Digite o tempo estimado em horas">
+            <input type="number" name="horas_estimada" id="estimado" required placeholder="Digite o tempo estimado em horas">
         </div>
         <div>
             <label for="data">Data limite: </label>

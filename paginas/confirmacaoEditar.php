@@ -26,15 +26,15 @@ if (!$tarefa) {
         </div>
         <div>
             <label for="estimado">Horas estimadas: </label>
-            <input type="time" name="horas_estimada" id="estimado" required placeholder="Digite o tempo estimado em horas"  value="<?= date('H:i', strtotime($tarefa['horas_estimada'])) ?>">
+            <input type="number" name="horas_estimada" id="estimado" required placeholder="Digite o tempo estimado em horas"  value="<?= htmlspecialchars($tarefa['horas_estimada']) ?>">
         </div>
         <div>
             <label for="data">Data limite: </label>
             <input type="date" name="data_limite" id="date" required value="<?= htmlspecialchars($tarefa["data_limite"]) ?>">
         </div>
-        <div>
+        <div class="botoes">
             <input class="botao" type="submit" value="Salvar">
-            <a href="index.php">Cancelar</a>
+            <a class="botao" href="index.php">Cancelar</a>
         </div>
     </form>
 </div>
