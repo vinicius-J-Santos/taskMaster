@@ -17,7 +17,6 @@ while($tarefas=$resultado->fetch_assoc()):
     <div>
         <h1>Estimativa em horas: <?= date("h:i", strtotime($tarefas["horas_estimada"]));?></h1>
         <h1>Prazo limite: <?= date("d/m/Y", strtotime($tarefas["data_limite"])); ?></h1>
-        <h1>concluido: <?= htmlspecialchars($tarefas["feito"]) ?></h1>
     </div>
     <div class="opcoes">
         <a href="">check</a>

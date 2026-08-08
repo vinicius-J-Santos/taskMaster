@@ -73,6 +73,7 @@ main .container input:focus, main .container textarea:focus {
     outline: none;
 }
 main .container .botao {
+    background-color: goldenrod;
     width: 45%;
 }
 
@@ -110,4 +111,32 @@ main .card .opcoes a {
     padding: 5px;
     width: 100px;
     align-items: center;
+}
+
+main .popup {
+    background-color: #005272;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main .popup div {
+    display: flex;
+    justify-content: space-around;
+}
+main .popup div button{
+    background-color: goldenrod;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+}
+main .popup div button a {
+    text-decoration: none;
+    color: black;
 }

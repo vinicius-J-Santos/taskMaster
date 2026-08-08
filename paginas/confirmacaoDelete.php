@@ -1,44 +1,39 @@
-<?php
-
-$id = (int)($_GET["id"] ?? 0);
-
-if (!$id) {
-    header("Location: /index.php");
-    exit;
-}
-
-$sql = "SELECT * FROM tarefas WHERE id = $id";
-
-$resultado = $conn->query($sql);
-
-$tarefa = $resultado->fetch_assoc();
-
-if (!$tarefa) {
-    header("Location: /index.php");
-    exit;
-}
-?>
 
 <div class="popup">
+    <?php
+    $id = (int)($_GET["id"]);
+    if (!$id) {
+        header("Location: index.php");
+        exit;
+    }
+    $sql = "select * from tarefas where id = $id";
+    $resultado = $conn->query($sql);
+    $tarefa = $resultado->fetch_assoc();
+    if (!$tarefa) {
+        header("Location: index.php");
+        exit;
+    }
+    ?>
+    <div>
+        <h1>
+            Você deseja mesmo deletar a tarefa
+            "<?= htmlspecialchars($tarefa["titulo"]); ?>"
+        </h1>
+    </div>
+    <div>
+        <form action="acoes/delete.php" method="POST">
 
-    <h1>
-        Você deseja mesmo deletar a tarefa
-        "<?= htmlspecialchars($tarefa["titulo"]); ?>"
-    </h1>
+            <input
+                type="hidden"
+                name="id"
+                value="<?= $id ?>">
 
-    <form action="acoes/delete.php" method="POST">
+            <button type="submit">
+                Sim
+            </button>
 
-        <input
-            type="hidden"
-            name="id"
-            value="<?= $id ?>">
-
-        <button type="submit">
-            Sim
-        </button>
-
-    </form>
-
-    <a href="index.php">Não</a>
-
+        </form>
+        <button><a href="index.php">Não</a></button>
+        
+    </div>
 </div>
