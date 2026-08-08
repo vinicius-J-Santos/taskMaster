@@ -20,7 +20,7 @@ while($tarefas=$resultado->fetch_assoc()):
     </div>
     <div class="opcoes">
         <a href="">check</a>
-        <a href="">edite</a>
+        <a href="index.php?pag=confirmacaoEditar&id=<?= $tarefas["id"]; ?>">edite</a>
         <a href="index.php?pag=confirmacaoDelete&id=<?= $tarefas["id"]; ?>">delete</a>
     </div>
 </div>
