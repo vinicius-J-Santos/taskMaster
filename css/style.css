@@ -114,13 +114,16 @@ main .card .opcoes {
     display: flex;
     justify-content: space-around;
 }
-main .card .opcoes a {
+main .card .opcoes a, main .card .opcoes form input {
     background-color: goldenrod;
     border-radius: 5px;
+    border: 0;
     color: black;
     padding: 5px;
     width: 100px;
     align-items: center;
+
+    cursor: pointer;
 }
 
 

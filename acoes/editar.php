@@ -19,3 +19,4 @@ $conn->query($sql);
 
 header("Location: ../index.php");
 exit;
+?>

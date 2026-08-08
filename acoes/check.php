@@ -9,7 +9,7 @@ if (!isset($_POST["id"])) {
 
 $id = (int)$_POST["id"];
 
-$sql = "delete from tarefas where id = $id";
+$sql = "update tarefas set feito = NOT feito where id = $id";
 
 $conn->query($sql);
 

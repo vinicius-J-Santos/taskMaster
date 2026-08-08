@@ -33,6 +33,7 @@ if (!$tarefa) {
             <input type="date" name="data_limite" id="date" required value="<?= htmlspecialchars($tarefa["data_limite"]) ?>">
         </div>
         <div class="botoes">
+            <input type="hidden" name="id" value>
             <input class="botao" type="submit" value="Salvar">
             <a class="botao" href="index.php">Cancelar</a>
         </div>
