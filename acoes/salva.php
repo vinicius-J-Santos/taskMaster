@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 require_once "../bd.php";
 
 $titulo = $_POST["titulo"];
@@ -10,6 +12,7 @@ $sql = "insert into tarefas(titulo,descricao,horas_estimada,data_limite) values 
 
 $conn->query($sql);
 
+$_SESSION["alerta"] = "Tabela $titulo criada com sucesso!";
 header("location: ../index.php");
 exit()
 

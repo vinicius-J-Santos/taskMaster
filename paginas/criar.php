@@ -1,7 +1,6 @@
 <div class="container">
     <h1>Criar Tarefa</h1>
     <form action="../taskMaster/acoes/salva.php" method="post">
-        <input type="hidden" name="criado_em" value="<?php time() ?>">
         <div>
             <label for="titulo">Título: </label>
             <input type="text" name="titulo" id="titulo" required placeholder="Digite o título da tarefa">

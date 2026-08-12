@@ -1,4 +1,12 @@
 <?php
+session_start();
+
+if(isset($_SESSION["alerta"])){
+    $mensagem = $_SESSION["alerta"];
+
+    echo "<script>alert('$mensagem')</script>";
+    unset($_SESSION["alerta"]);
+}
 
 require_once "bd.php";
 

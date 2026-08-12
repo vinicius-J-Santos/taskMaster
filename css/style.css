@@ -114,6 +114,12 @@ main .card .opcoes {
     display: flex;
     justify-content: space-around;
 }
+main .card .opcoes .iconSub {
+    background-image: url(/img/circulo-xmark.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 32px;
+}
 main .card .opcoes a, main .card .opcoes form input {
     background-color: goldenrod;
     border-radius: 5px;
