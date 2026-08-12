@@ -4,7 +4,7 @@ $host = "localhost";
 $user = "root";
 $pass = "";
 $dbname = "taskmaster";
-$port = 3308;
+$port = 3306;
 
 $conn = new mysqli($host, $user, $pass, $dbname, $port);
 

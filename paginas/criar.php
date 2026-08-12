@@ -15,7 +15,7 @@
         </div>
         <div>
             <label for="data">Data limite: </label>
-            <input type="date" name="data_limite" id="date" required>
+            <input type="date" name="data_limite" id="data" required>
         </div>
         <div>
             <input class="botao" type="submit" value="Criar Tarefa">

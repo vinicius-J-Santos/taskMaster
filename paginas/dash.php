@@ -27,10 +27,10 @@ while($tarefas=$resultado->fetch_assoc()):
     <div class="opcoes">
         <form action="acoes/check.php" method="post">
             <input type="hidden" name="id" value="<?= $tarefas["id"] ?>">
-            <input type="submit" class="iconSub">
+            <input type="submit" value="<?php if($tarefas["feito"]){ echo "Desfazer";}else{ echo "Feito";} ?>">
         </form>
-        <a href="index.php?pag=confirmacaoEditar&id=<?= $tarefas["id"]; ?>"><img src="img/editar-arquivo.png" alt="Editar"></a>
-        <a href="index.php?pag=confirmacaoDelete&id=<?= $tarefas["id"]; ?>"><img src="img/arquivo-menos.png" alt="Deletar"></a>
+        <a href="index.php?pag=confirmacaoEditar&id=<?= $tarefas["id"]; ?>">Editar</a>
+        <a href="index.php?pag=confirmacaoDelete&id=<?= $tarefas["id"]; ?>">Deletar</a>
     </div>
 </div>
 <?php
