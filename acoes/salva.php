@@ -12,7 +12,7 @@ $sql = "insert into tarefas(titulo,descricao,horas_estimada,data_limite) values 
 
 $conn->query($sql);
 
-$_SESSION["alerta"] = "Tabela $titulo criada com sucesso!";
+$_SESSION["alerta"] = "Tarefa $titulo criada com sucesso!";
 header("location: ../index.php");
 exit()
 

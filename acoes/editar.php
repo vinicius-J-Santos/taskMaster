@@ -18,7 +18,7 @@ $sql = "update tarefas set titulo = '$titulo', descricao = '$descricao', horas_e
 //die( $sql);
 $conn->query($sql);
 
-$_SESSION["alerta"] = "Tabela $titulo editada com sucesso!";
+$_SESSION["alerta"] = "Tarefa $titulo editada com sucesso!";
 header("Location: ../index.php");
 exit;
 ?>

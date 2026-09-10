@@ -4,7 +4,7 @@
 }
 body {
     min-height: 100vh;
-    background-color: #005272;
+    background-color: #3d3d3d;
 }
 header {
     height: 8%;
@@ -20,6 +20,7 @@ header a {
     text-decoration: none;
 }
 header .ativo {
+    color: #aa61fd;
     text-decoration: underline;
 }
 
@@ -28,7 +29,7 @@ main {
     margin: 1%;
     padding: 2%;
 
-    background-color: #002d3f;
+    background-color: #252525;
     border-radius: 20px;
 
     display: flex;
@@ -41,9 +42,13 @@ main {
 }
 
 main .container {
-    background-color: #005272;
+    background-color: #504555;
+    border-left: 5px solid #8d2dfc;
     border-radius: 10px;
     padding: 20px;
+}
+main .container h1 {
+    color: #c38fff;
 }
 main .container form {
     display: flex;
@@ -56,6 +61,8 @@ main .container label {
     font-size: 30px;
 }
 main .container input, main .container textarea, main .container a{
+    background-color: #252525;
+    color: #fff;
     padding: 5px;
     margin: 10px;
     border: 0;
@@ -73,7 +80,7 @@ main .container input:focus, main .container textarea:focus {
     outline: none;
 }
 main .container .botao {
-    background-color: goldenrod;
+    background-color: #8d2dfc;
     width: 45%;
 }
 main .container .botoes{
@@ -83,12 +90,13 @@ main .container .botoes{
 }
 main .container .botao{
     text-align: center;
-    color: black;
+    color: #fff;
     text-decoration: none;
 }
 
 main .card {
-    background-color: #005272;
+    background-color: #504555;
+    border-left: 5px solid #8d2dfc;
     border-radius: 10px;
     padding: 20px;
     width: 400px;
@@ -98,15 +106,16 @@ main .card {
     justify-content: space-between;
 }
 main .card .titulo {
+    color: #c38fff;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 main .card .titulo h3 {
-    color: rgb(170, 170, 170);
+    color: #cccccc;
 }
 main .card .desc {
-    background-color: #002d3f;
+    background-color: #252525;
     padding: 10px;
     border-radius: 10px;
 }
@@ -116,10 +125,10 @@ main .card .opcoes {
     text-align: center;
 }
 main .card .opcoes a, main .card .opcoes form input {
-    background-color: goldenrod;
+    background-color: #8d2dfc;
     border-radius: 5px;
     border: 0;
-    color: black;
+    color: #fff;
     text-decoration: none;
     padding: 5px;
     width: 100px;
@@ -127,10 +136,13 @@ main .card .opcoes a, main .card .opcoes form input {
 
     cursor: pointer;
 }
+main .card .opcoes form input{
+    height: 30px;
+}
 
 
 main .popup {
-    background-color: #005272;
+    background-color: #504555;
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -142,12 +154,12 @@ main .popup div {
     justify-content: space-around;
 }
 main .popup div button, main .popup div a {
-    background-color: goldenrod;
+    background-color: #8d2dfc;
     border-radius: 5px;
     border: 0;
     outline: none;
     text-decoration: none;
-    color: black;
+    color: #fff;
     padding: 5px;
     width: 100px;
     cursor: pointer;

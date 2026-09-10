@@ -15,7 +15,7 @@ $sql = "delete from tarefas where id = $id";
 
 $conn->query($sql);
 
-$_SESSION["alerta"] = "Tabela deletada com sucesso!";
+$_SESSION["alerta"] = "Tarefa deletada com sucesso!";
 header("Location: ../index.php");
 exit;
 ?>
